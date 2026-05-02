@@ -37,6 +37,7 @@
       }
 
       .lp-section {
+        position: relative;
         display: block;
       }
 
@@ -45,12 +46,64 @@
         width: 100%;
         height: auto;
       }
+
+      .cta-link {
+        position: absolute;
+        display: block;
+        z-index: 1;
+      }
+
+      .section-a .cta-link {
+        left: 34.7%;
+        top: 86.8%;
+        width: 58.0%;
+        height: 8.4%;
+      }
+
+      .section-f .cta-link {
+        left: 2.6%;
+        top: 82.0%;
+        width: 91.2%;
+        height: 14.2%;
+      }
+
+      .section-d .cta-link {
+        left: 54.8%;
+        top: 95.2%;
+        width: 41.8%;
+        height: 4.5%;
+      }
+
+      .section-g .cta-link-secondary {
+        position: absolute;
+        left: 3.0%;
+        top: 82.8%;
+        width: 93.0%;
+        height: 14.6%;
+        display: block;
+        z-index: 1;
+      }
+
+      .section-g .cta-link-tertiary {
+        position: absolute;
+        left: 54.6%;
+        top: 73.6%;
+        width: 41.8%;
+        height: 5.2%;
+        display: block;
+        z-index: 1;
+      }
     </style>
   </head>
   <body>
     <main class="lp">
-      <section class="lp-section">
+      <section class="lp-section section-a">
         <img src="./images/a.png" alt="百花ゼロジェル メインビジュアル" />
+        <a
+          class="cta-link"
+          href="https://www.hyakka-market.com/product-detail.html"
+          aria-label="商品詳細ページへ移動"
+        ></a>
       </section>
       <section class="lp-section">
         <img src="./images/b.png" alt="お口の悩み" />
@@ -58,17 +111,37 @@
       <section class="lp-section">
         <img src="./images/c.png" alt="ピリピリ感に関する調査" />
       </section>
-      <section class="lp-section">
+      <section class="lp-section section-d">
         <img src="./images/d.png" alt="国内工場と品質試験" />
+        <a
+          class="cta-link"
+          href="https://www.hyakka-market.com/product-detail.html"
+          aria-label="商品詳細ページへ移動"
+        ></a>
       </section>
       <section class="lp-section">
         <img src="./images/e.png" alt="ランキングとレビュー" />
       </section>
-      <section class="lp-section">
+      <section class="lp-section section-f">
         <img src="./images/f.png" alt="ランキングとレビュー" />
+        <a
+          class="cta-link"
+          href="https://www.hyakka-market.com/product-detail.html"
+          aria-label="商品詳細ページへ移動"
+        ></a>
       </section>
-      <section class="lp-section">
+      <section class="lp-section section-g">
         <img src="./images/g.png" alt="選ばれる理由" />
+        <a
+          class="cta-link-tertiary"
+          href="https://www.hyakka-market.com/product-detail.html"
+          aria-label="商品詳細ページへ移動"
+        ></a>
+        <a
+          class="cta-link-secondary"
+          href="https://www.hyakka-market.com/product-detail.html"
+          aria-label="商品詳細ページへ移動"
+        ></a>
       </section>
       <section class="lp-section">
         <img src="./images/h.png" alt="使い方とよくある質問" />
